@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>Email</title>
+      <link rel="stylesheet" href="style.css">
+      <script src="general.js"></script>
+      <script src="email.js"></script>
+    </head>
+    <body>
+      <nav>
+        <ul id='navigation bar'>
+          <li class="tab"><a class="navigation" href="index.html">Text</a></li>
+          <li class="tab"><a class="navigation" href="Image.html">Image</a></li>
+          <li class="tab"><a class="navigation" href="video.html">Video</a></li>
+          <li class="tab"><a class="navigation" href="table.html">Table</a></li>
+          <li class="tab current"><a class="navigation" href="email.html">Email</a></li>
+        </ul>
+      </nav>
+
+      <form id="submit_email">
+        <label for="email">Email:</label> <br>
+        <input type="text" id="email" name="email" required> <br>
+        <div id="message"></div>
+        <input type="submit" value="Done">
+      </form>
+
+      <button type="button" id="to-top" disabled>Back to top</button>
+    </body>
+  
+  </html>

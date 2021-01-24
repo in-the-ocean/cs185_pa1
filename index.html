@@ -4,38 +4,44 @@
       <meta charset="utf-8">
       <title>text</title>
       <link rel="stylesheet" href="style.css">
+      <script src="general.js"></script>
     </head>
     <body>
       <nav>
         <ul id='navigation bar'>
-          <li><a class="navigation" href="index.html">Text</a></li>
-          <li><a class="navigation" href="Image.html">Image</a></li>
-          <li><a class="navigation" href="video.html">Video</a></li>
-          <li><a class="navigation" href="table.html">Table</a></li>
+          <li class="tab current"><a class="navigation" href="index.html">Text</a></li>
+          <li class="tab"><a class="navigation" href="Image.html">Image</a></li>
+          <li class="tab"><a class="navigation" href="video.html">Video</a></li>
+          <li class="tab"><a class="navigation" href="table.html">Table</a></li>
+          <li class="tab"><a class="navigation" href="email.html">Email</a></li>
         </ul>
       </nav>
 
-      <label for="fname">First name:</label> <br>
-      <input type="text" id="fname" name="fname"> <br>
-      <label for="lname">Last name:</label> <br>
-      <input type="text" id="lname" name="lname"> <br>
+      <form>
+        <label for="fname">First name:</label> <br>
+        <input type="text" id="fname" name="fname"> <br>
+        <label for="lname">Last name:</label> <br>
+        <input type="text" id="lname" name="lname"> <br>
 
-      <p>Favorite Movie</p>
-      <div>
-        <input type="radio" id="Avengers" name="movie" value="avengers"
-              checked>
-        <label for="Avengers">Avengers</label>
-      </div>
-      <div>
-        <input type="radio" id="darkknight" name="movie" value="darkknight">
-        <label for="darkknight">Dark Knight</label>
-      </div>
-      <div>
-        <input type="radio" id="Tenet" name="movie" value="Tenet">
-        <label for="Tenet">Tenet</label>
-      </div>
+        <p>Favorite Movie</p>
+        <div>
+          <input type="radio" id="Avengers" name="movie" value="avengers"
+                checked>
+          <label for="Avengers">Avengers</label>
+        </div>
+        <div>
+          <input type="radio" id="darkknight" name="movie" value="darkknight">
+          <label for="darkknight">Dark Knight</label>
+        </div>
+        <div>
+          <input type="radio" id="Tenet" name="movie" value="Tenet">
+          <label for="Tenet">Tenet</label>
+        </div>
 
-      <br>
-      <input type="submit" value="Done">
+        <br>
+        <input type="submit" value="Done">
+      </form>
+
+      <button type="button" id="to-top" disabled>Back to top</button>
     </body>
   </html>
