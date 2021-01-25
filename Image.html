@@ -4,24 +4,33 @@
       <meta charset="utf-8">
       <title>Image</title>
       <link rel="stylesheet" href="style.css">
+      <script src="image.js"></script>
+      <script src="general.js"></script>
     </head>
     <body>
       <nav>
         <ul id='navigation bar'>
-          <li><a class="navigation" href="index.html">Text</a></li>
-          <li><a class="navigation" href="Image.html">Image</a></li>
-          <li><a class="navigation" href="video.html">Video</a></li>
-          <li><a class="navigation" href="table.html">Table</a></li>
+          <li class="tab"><a class="navigation" href="index.html">Text</a></li>
+          <li class="tab current"><a class="navigation" href="Image.html">Image</a></li>
+          <li class="tab"><a class="navigation" href="video.html">Video</a></li>
+          <li class="tab"><a class="navigation" href="table.html">Table</a></li>
+          <li class="tab"><a class="navigation" href="email.html">Email</a></li>
         </ul>
       </nav>
 
-      <div class="img_container">
-        <div class="img"><img src="sekiro_1.jpg"></div>
-        <div class="img"><img src="sekiro_2.png"></div>
-        <div class="img"><img src="sekiro_3.jpg"></div>
-        <div class="img"><img src="sekiro_4.jpg"></div>
-        <div class="img"><img src="sekiro_5.jpg"></div>
-        <div class="img"><img src="sekiro_6.jpg"></div>
+      <div class="container">
+        <div class="img"><img src="media/sekiro_1.jpg"></div>
+        <div class="img"><img src="media/sekiro_2.png"></div>
+        <div class="img"><img src="media/sekiro_3.jpg"></div>
+        <div class="img"><img src="media/sekiro_4.jpg"></div>
+        <div class="img"><img src="media/sekiro_5.jpg"></div>
+        <div class="img"><img src="media/sekiro_6.jpg"></div>
+        <div class="img"><img src="media/ori_1.jpg"></div>
+        <div class="img"><img src="media/ori_2.jpg"></div>
       </div>
+
+      <div id="overlay"></div>
+
+      <button type="button" id="to-top" disabled>Back to top</button>
     </body>
   </html>

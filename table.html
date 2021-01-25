@@ -4,14 +4,16 @@
       <meta charset="utf-8">
       <title>Table</title>
       <link rel="stylesheet" href="style.css">
+      <script src="general.js"></script>
     </head>
     <body>
       <nav>
         <ul id='navigation bar'>
-          <li><a class="navigation" href="index.html">Text</a></li>
-          <li><a class="navigation" href="Image.html">Image</a></li>
-          <li><a class="navigation" href="video.html">Video</a></li>
-          <li><a class="navigation" href="table.html">Table</a></li>
+          <li class="tab"><a class="navigation" href="index.html">Text</a></li>
+          <li class="tab"><a class="navigation" href="Image.html">Image</a></li>
+          <li class="tab"><a class="navigation" href="video.html">Video</a></li>
+          <li class="tab current"><a class="navigation" href="table.html">Table</a></li>
+          <li class="tab"><a class="navigation" href="email.html">Email</a></li>
         </ul>
       </nav>
 
@@ -34,5 +36,7 @@
           <td>2020</td>
         </tr>
       </table>
+
+      <button type="button" id="to-top" disabled>Back to top</button>
     </body>
   </html>
