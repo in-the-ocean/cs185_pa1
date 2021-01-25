@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
             vid.src = element.src
             vid.controls = element.controls
             document.getElementById("overlay").appendChild(vid)
-            document.getElementById("overlay").style.display = "block"
+            document.getElementById("overlay").style.display = "flex"
             event.preventDefault()
         })
     });

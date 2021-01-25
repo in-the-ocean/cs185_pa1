@@ -4,9 +4,10 @@ document.addEventListener("DOMContentLoaded", function () {
         element.addEventListener("click", function(event) {
             var img = document.createElement("img")
             img.src = element.src
+            img.id = "enlarged"
             console.log(element.src)
             document.getElementById("overlay").appendChild(img)
-            document.getElementById("overlay").style.display = "block"
+            document.getElementById("overlay").style.display = "flex"
         })
     });
 
